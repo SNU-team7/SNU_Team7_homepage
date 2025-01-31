@@ -140,6 +140,16 @@
             font-size: 0.9rem;
         }
 
+        .team-leader-link {
+            text-decoration: none;  /* 링크 밑줄 제거 */
+            color: inherit;  /* 기존 텍스트 색상 유지 */
+            display: block;  /* 전체 영역 클릭 가능하게 변경 */
+        }
+
+        .team-leader-link:hover {
+            cursor: pointer;  /* 마우스 올리면 클릭 가능함을 표시 */
+        }
+
         @keyframes pulse {
             0% { opacity: 1; }
             50% { opacity: 0.8; }
@@ -165,18 +175,20 @@
             <p class="subtitle">함께 만들어가는 미래</p>
         </header>
 
-        <div class="team-leader animate__animated animate__fadeInUp">
-            <div class="leader-content">
-                <div class="leader-avatar">👑</div>
-                <div class="leader-info">
-                    <h2>김도균</h2>
-                    <span class="role-badge">팀장</span>
-                    <p class="info-text">1년 경력의 프로젝트 관리 전문가</p>
-                    <p class="info-text">전문분야: 프로젝트 기획 및 팀 리드</p>
-                    <p class="info-text">201905060@ikw.ac.kr</p>
+        <a href="https://dogyun0420.github.io/Portfolio/" target="_blank" class="team-leader-link">
+            <div class="team-leader animate__animated animate__fadeInUp">
+                <div class="leader-content">
+                    <div class="leader-avatar">👑</div>
+                    <div class="leader-info">
+                        <h2>김도균</h2>
+                        <span class="role-badge">팀장</span>
+                        <p class="info-text">1년 경력의 프로젝트 관리 전문가</p>
+                        <p class="info-text">전문분야: 프로젝트 기획 및 팀 리드</p>
+                        <p class="info-text">201905060@ikw.ac.kr</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
 
         <div class="team-grid">
             <div class="team-member animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
