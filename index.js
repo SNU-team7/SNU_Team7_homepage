@@ -1,6 +1,7 @@
 import React from 'react';
 import { Users, Star, Medal, Sparkles } from 'lucide-react';
 
+
 const TeamIntroduction = () => {
   const teamData = {
     leader: {
